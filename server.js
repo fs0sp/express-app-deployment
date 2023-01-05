@@ -7,7 +7,7 @@ const data = require('./temp');
 const port = process.env.PORT;
 
 app.get('/', (req, res)=> {
-  res.send('GO TO /data');
+  res.send('please check /data');
 })
 
 app.get('/data', (req, res) => {
