@@ -8,7 +8,7 @@ const port = process.env.PORT;
 const name = process.env.NAME;
 
 app.get('/', (req, res)=> {
-  res.send('My name is : ',name);
+  res.send('My name is : ');
 });
 
 app.get('/name', (req, res)=> {
