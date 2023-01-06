@@ -12,7 +12,7 @@ app.get('/', (req, res)=> {
 });
 
 app.get('/name', (req, res)=> {
-  res.send('My name is : ',process.env.NAME);
+  res.send(process.env.NAME);
 })
 
 app.get('/data', (req, res) => {
