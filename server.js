@@ -9,6 +9,10 @@ const name = process.env.NAME;
 
 app.get('/', (req, res)=> {
   res.send('My name is : ',name);
+});
+
+app.get('/name', (req, res)=> {
+  res.send('My name is : ',name);
 })
 
 app.get('/data', (req, res) => {
