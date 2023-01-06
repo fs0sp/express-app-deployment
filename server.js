@@ -5,9 +5,10 @@ const app = express();
 
 const data = require('./temp');
 const port = process.env.PORT;
+const name = process.env.NAME;
 
 app.get('/', (req, res)=> {
-  res.send('please check /data');
+  res.send('My name is : ',name);
 })
 
 app.get('/data', (req, res) => {
